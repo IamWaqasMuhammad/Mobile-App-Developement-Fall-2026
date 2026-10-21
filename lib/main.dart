@@ -12,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Mobile App Development Fall 2026',
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigoAccent  )),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigoAccent),
+      ),
       home: const DashboardScreen(),
     );
   }

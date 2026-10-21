@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class CounterApp extends StatefulWidget {
+  const CounterApp({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<CounterApp> createState() => _CounterAppState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _CounterAppState extends State<CounterApp> {
   int _counter = 0;
 
   void _incrementCounter() {
