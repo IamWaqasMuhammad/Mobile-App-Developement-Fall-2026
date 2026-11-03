@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practice_project/screens/course_catalog_screen.dart';
+import 'package:practice_project/screens/notes_screen.dart';
 import 'package:practice_project/screens/student_profile.dart';
 import 'counter_app.dart';
 
@@ -83,6 +84,20 @@ class DashboardScreen extends StatelessWidget {
                 MaterialPageRoute(
                   builder: (context) => const CourseCatalogScreen(),
                 ),
+              );
+            },
+          ),
+          const SizedBox(height: 14),
+          _DashboardTile(
+            icon: Icons.menu_book_rounded,
+            iconColor: Colors.deepOrange,
+            title: 'Notes',
+            subtitle: 'Secure your sensitive data and notes',
+            tileColor: Colors.deepOrange.shade50,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => NotesScreen()),
               );
             },
           ),

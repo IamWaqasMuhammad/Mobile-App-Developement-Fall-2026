@@ -9,7 +9,6 @@ class CourseCatalogDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const primaryNavy = Color(0xFF0F172A);
-    const accentIndigo = Color(0xFF4F46E5);
 
     return Drawer(
       backgroundColor: Colors.white,
