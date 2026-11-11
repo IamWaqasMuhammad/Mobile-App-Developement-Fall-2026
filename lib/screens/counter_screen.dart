@@ -12,7 +12,7 @@ class CounterScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: const Color(0xFFF4F6FA),
         appBar: AppBar(
-          title: const Text('Counter App'),
+          title: const Text('Counter App using Provider'),
           centerTitle: true,
           backgroundColor: Colors.blue,
           foregroundColor: Colors.white,
@@ -28,7 +28,7 @@ class CounterScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      'My Counter',
+                      'My Counter app',
                       style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold,
@@ -53,12 +53,6 @@ class CounterScreen extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          const Icon(
-                            Icons.calculate,
-                            size: 40,
-                            color: Colors.blue,
-                          ),
-                          const SizedBox(height: 10),
                           Text(
                             '${counter.count}',
                             style: const TextStyle(
@@ -78,6 +72,7 @@ class CounterScreen extends StatelessWidget {
                     const SizedBox(height: 25),
 
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         SizedBox(
                           height: 50,
@@ -101,7 +96,9 @@ class CounterScreen extends StatelessWidget {
                             },
                             icon: const Icon(Icons.remove),
                             label: const Text('Decrease Counter'),
-                            style: OutlinedButton.styleFrom(),
+                            style: OutlinedButton.styleFrom(
+                              foregroundColor: Colors.blue,
+                            ),
                           ),
                         ),
                       ],
