@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice_project/screens/counter_screen.dart';
 import 'package:practice_project/screens/course_catalog_screen.dart';
 import 'package:practice_project/screens/notes_screen.dart';
 import 'package:practice_project/screens/student_profile.dart';
@@ -44,7 +45,7 @@ class DashboardScreen extends StatelessWidget {
             icon: Icons.calculate_rounded,
             iconColor: Colors.blue.shade700,
             title: 'Counter App',
-            subtitle: 'Explore your customized counter',
+            subtitle: 'Explore your counter',
             tileColor: Colors.blue.shade50,
             onTap: () {
               Navigator.push(
@@ -98,6 +99,20 @@ class DashboardScreen extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => NotesScreen()),
+              );
+            },
+          ),
+          SizedBox(height: 14),
+          _DashboardTile(
+            icon: Icons.menu_book_rounded,
+            iconColor: Colors.lightBlue,
+            title: 'Counter App V2',
+            subtitle: 'Counter App using Provider',
+            tileColor: Colors.lightBlue.shade50,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => CounterScreen()),
               );
             },
           ),
